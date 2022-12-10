@@ -1,4 +1,4 @@
-# clash多订阅整合根据
+# clash多订阅整合工具
 
 [官方文档-配置文件示例](https://github.com/Dreamacro/clash/wiki/configuration#all-configuration-options)
 
