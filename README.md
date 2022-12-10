@@ -53,3 +53,5 @@ proxy-groups:
     proxies:
       - provider1::px1
 ```
+
+> 规则提供者使用方法类似，将rule-provider与分流规则RULE-SET后面的名称配置为同一个即可
