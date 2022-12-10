@@ -1,0 +1,11 @@
+proxies:
+  - name: "px1"
+    type: ss
+    server: 10.0.0.1
+    port: 80
+    cipher: aes-256-cfb
+    password: "password123456"
+    interval: 300
+
+
+

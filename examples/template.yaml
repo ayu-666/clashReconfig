@@ -1,0 +1,24 @@
+port: 7890
+proxies:
+  - name: "proxy01"
+    type: ss
+    server: 192.168.2.1
+    port: 80
+    cipher: aes-256-cfb
+    password: "aaaaaaaa"
+    interval: 300
+proxy-groups:
+  - name: "LoadBalance"
+    type: "load-balance"
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    proxies:
+      - proxy01
+    use:
+      - provider1
+proxy-providers:
+  provider1:
+    type: http
+    url: "https://ghproxy.com/raw.githubusercontent.com/ayu-666/clashReconfig/main/examples/proxy_provider1.yaml"
+    interval: 3600
+    path: pp1.yaml
